@@ -1,6 +1,5 @@
 #include <iostream>
 #include <String>
-#include <vector>
 using namespace std;
 int main(){
     while(true){
@@ -16,9 +15,7 @@ int main(){
                 cnt++;
             }
         }
-        cout << cnt << endl;
         while(cnt + 1 != the_equation.length()){
-            cout << cnt << endl;
             for(unsigned short i = 0; i < the_equation.length(); i++){
                 if (the_equation[i] == '@'){
                     continue;
@@ -33,10 +30,6 @@ int main(){
                     break;
                 }
             }
-            cout << sign << endl;
-            cout << the_equation << endl;
-            cout << num1 << endl;
-            cout << num2 << endl;
             for(unsigned short i = 0; i < the_equation.length(); i++){
                 if (the_equation[i] == '@'){
                     continue;
@@ -60,14 +53,11 @@ int main(){
                     break; 
                 }
             }
-            cout << num1 << endl;
-            cout << num2 << endl;
-            cout << sign << endl;
+
             cout << the_equation << endl;
             int num_one = std::stoi(num1);
             int num_two = std::stoi(num2);
-            cout << num_one << endl;
-            cout << num_two << endl;
+
             if (sign == '+'){
             cout << num_one + num_two << endl;
             }
